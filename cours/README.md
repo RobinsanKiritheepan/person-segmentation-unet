@@ -1,4 +1,4 @@
-# 📖 cours/ — les notebooks annotés
+# cours/ — les notebooks annotés
 
 Les trois notebooks de [`../notebooks`](../notebooks/), repris **à l'identique** mais
 annotés en profondeur : un bloc de cours avant chaque cellule, et **chaque ligne de code
@@ -31,7 +31,7 @@ tout ce qui est commun — pas de redite.
 5. **Transfer learning** — un encoder pré-entraîné sait déjà voir ; sur un petit dataset,
    c'est le levier n°1.
 
-## 🔴 Les 7 bugs rencontrés pendant le projet
+## Les 7 bugs rencontrés pendant le projet
 
 Détaillés dans le bilan du notebook `01`. Aucun n'était du deep learning :
 

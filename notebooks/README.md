@@ -1,4 +1,4 @@
-# 🧪 notebooks/ — les 3 versions à exécuter
+# notebooks/ — les 3 versions à exécuter
 
 Les notebooks **nus**, prêts à tourner. Pour les versions expliquées ligne par ligne,
 voir [`../cours`](../cours/).
@@ -30,7 +30,7 @@ Lance donc les notebooks depuis `notebooks/` (ce que fait Jupyter par défaut).
 | `BATCH_SIZE` | 8 | baisse à 4 si tu manques de mémoire GPU |
 | `IMG_SIZE` | 128 (v1) / 256 (v3) | plus grand = plus fin mais bien plus lent |
 
-## ⚠️ Deux pièges de plateforme
+## Deux pièges de plateforme
 
 - **Windows** : `num_workers` doit rester à `0` dans les `DataLoader` — le
   multiprocessing plante sous Jupyter/Windows.

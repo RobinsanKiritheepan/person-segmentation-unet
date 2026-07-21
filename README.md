@@ -1,4 +1,4 @@
-# 🧍 Person Segmentation — U-Net from scratch → transfer learning
+# Person Segmentation — U-Net from scratch → transfer learning
 
 > Recoder le **fond flou de Zoom** : un réseau qui prédit, pour **chaque pixel** d'une
 > photo, s'il appartient à une **personne** ou au **fond**.
@@ -12,7 +12,7 @@ jusqu'à une version optimisée à encoder pré-entraîné.
 
 ---
 
-## 🎯 Le problème
+## Le problème
 
 La **segmentation binaire d'images** : à partir d'une photo RGB, produire un **masque**
 de la même taille où chaque pixel vaut 1 (personne) ou 0 (fond).
@@ -26,7 +26,7 @@ automatique de Photoshop ou remove.bg.
 
 ---
 
-## 📊 Résultats
+## Résultats
 
 | Version | Modèle | Résolution | Dataset | Dice (test) | IoU (test) |
 |---|---|---|---|---|---|
@@ -45,33 +45,33 @@ automatique de Photoshop ou remove.bg.
 
 ---
 
-## 🗂️ Architecture du dépôt
+## Architecture du dépôt
 
 ```
 person-segmentation-unet/
 │
-├── notebooks/                        🧪 les 3 versions du projet
+├── notebooks/                         les 3 versions du projet
 │   ├── 01_tp_unet_from_scratch.ipynb    U-Net écrit à la main, Penn-Fudan
 │   ├── 02_colab_dataset_kaggle.ipynb    même pipeline, dataset Kaggle, pensé Colab
 │   └── 03_resnet_unet_transfer.ipynb    version performance : encoder pré-entraîné
 │
-├── cours/                            📖 les mêmes, ANNOTÉS ligne par ligne
+├── cours/                             les mêmes, ANNOTÉS ligne par ligne
 │   ├── 01_tp_unet_from_scratch_annote.ipynb
 │   ├── 02_colab_dataset_kaggle_annote.ipynb
 │   └── 03_resnet_unet_transfer_annote.ipynb
 │
-├── slides/                           🎬 support de présentation (7 diapos)
-├── sujet/                            📄 l'énoncé d'origine
-├── data/                             📦 datasets (ignorés par git, téléchargés auto)
+├── slides/                            support de présentation (7 diapos)
+├── sujet/                             l'énoncé d'origine
+├── data/                              datasets (ignorés par git, téléchargés auto)
 └── requirements.txt
 ```
 
-👉 **Pour comprendre** : ouvre [`cours/`](cours/) — chaque ligne de code y est commentée.
-👉 **Pour exécuter** : ouvre [`notebooks/`](notebooks/).
+**Pour comprendre** : ouvre [`cours/`](cours/) — chaque ligne de code y est commentée.
+**Pour exécuter** : ouvre [`notebooks/`](notebooks/).
 
 ---
 
-## 🚀 Démarrage rapide
+## Démarrage rapide
 
 ```bash
 git clone https://github.com/RobinsanKiritheepan/person-segmentation-unet.git
@@ -88,7 +88,7 @@ au premier lancement, et la v2/v3 utilise `kagglehub`.
 
 ---
 
-## 🧠 Les 3 versions, et ce qu'elles apprennent
+## Les 3 versions, et ce qu'elles apprennent
 
 ### v1 — Le U-Net à la main
 
@@ -118,7 +118,7 @@ checkpoint.
 
 ---
 
-## 🛠️ Stack
+## Stack
 
 `PyTorch` · `torchvision` · `NumPy` · `Pillow` · `matplotlib` · `OpenCV` · `kagglehub`
 
@@ -127,7 +127,7 @@ Testé sur **AMD Radeon 880M via ROCm** (`torch 2.9.1+rocm7.2.1`) et sur **Googl
 
 ---
 
-## 📚 Datasets
+## Datasets
 
 | Dataset | Taille | Usage | Source |
 |---|---|---|---|
@@ -138,7 +138,7 @@ Les deux se téléchargent automatiquement. `data/` est volontairement exclu du 
 
 ---
 
-## 📝 Licence
+## Licence
 
 MIT — voir [LICENSE](LICENSE).
 

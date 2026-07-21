@@ -1,4 +1,4 @@
-# 📦 data/
+# data/
 
 **Ce dossier est volontairement vide sur le dépôt** (exclu par `.gitignore`).
 

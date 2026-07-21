@@ -1,4 +1,4 @@
-# 🎬 slides/
+# slides/
 
 | Fichier | Contenu |
 |---|---|
@@ -6,4 +6,4 @@
 
 Format 16:9, prêt à présenter.
 
-👉 Le détail écrit : [`../cours`](../cours/)
+Le détail écrit : [`../cours`](../cours/)
