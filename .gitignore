@@ -1,0 +1,47 @@
+# ============================================================
+#  Donnees — JAMAIS sur le depot
+# ============================================================
+# Les datasets pesent plusieurs Go et se telechargent tout seuls
+# (Penn-Fudan par URL, Supervisely via kagglehub). Les versionner
+# n'apporterait rien et rendrait le clone inutilisable.
+# NB : "data/*" et non "data/" — git ne sait pas re-inclure un fichier
+# si son dossier parent est exclu. Cette forme laisse passer le README.
+data/*
+!data/README.md
+*.zip
+
+# Photos personnelles de test (Mission 7)
+photos_test/
+
+# ============================================================
+#  Sorties d'execution
+# ============================================================
+lightning_logs/
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# ============================================================
+#  Python / Jupyter
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+ENV/
+
+# ============================================================
+#  Fichiers systeme et temporaires
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+# verrous temporaires Office (crees quand un .pptx est ouvert)
+~$*
+_scan*.txt

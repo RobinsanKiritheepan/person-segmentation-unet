@@ -1,0 +1,26 @@
+# ------------------------------------------------------------
+# Person Segmentation — dependances
+# ------------------------------------------------------------
+# Installation :  pip install -r requirements.txt
+#
+# NOTE torch/torchvision : ces contraintes installent la build CPU
+# ou CUDA par defaut selon ta machine. Pour une carte AMD (ROCm),
+# suis les instructions officielles : https://pytorch.org/get-started/locally/
+# (le projet a ete developpe sur torch 2.9.1+rocm7.2.1)
+
+torch>=2.0
+torchvision>=0.15
+
+numpy>=1.24
+matplotlib>=3.7
+Pillow>=9.0
+
+# Bonus fond flou (Mission 8) — facultatif
+opencv-python>=4.8
+
+# Telechargement du dataset Supervisely (notebooks v2 et v3)
+kagglehub>=0.3
+
+# Pour executer les notebooks
+jupyterlab>=4.0
+ipywidgets>=8.0
